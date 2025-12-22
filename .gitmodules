@@ -1,0 +1,3 @@
+[submodule "elfReader"]
+	path = elfReader
+	url = https://github.com/ksl02/Elf-Reader.git
