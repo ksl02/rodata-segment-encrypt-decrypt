@@ -1,3 +1,5 @@
+Originally written in 2023, published in 2025 for portfolio.
+
 Example for encrypting the `.rodata` segment (can also encrypt any segment specified by the linker script) to hinder static analysis of ARM32 binaries. After compilation, encrypt.py will encrypt the rodata segment of the executable. On execution, the process will change the protections of rodata and decrypt before using any read only variables.
 
 In dummy.cpp, we can see that it prints "Hello World!" after decryption. This string will be stored in rodata on compilation. So, if we encrypt `.rodata`, "Hello World" should no longer appear in the static binary.
